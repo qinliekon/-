@@ -3,9 +3,9 @@
 
 using namespace std;
 
-// 被积函数 f(x) = x
+// 被积函数 f(x) = x^2
 double f(double x) {
-    return x; // 被积函数
+    return x * x; // 被积函数
 }
 
 // 复化梯形法计算定积分
@@ -41,7 +41,7 @@ double adaptive_integration(double (*func)(double), double a, double b, double t
 int main() {
     // 设置积分区间、容忍度
     double a = 0.0;
-    double b = 10.0; // 积分区间 [0, 1]
+    double b = 1.0; // 积分区间 [0, 1]
     double tol = 1e-6; // 容忍度
 
     // 调用自适应积分函数
