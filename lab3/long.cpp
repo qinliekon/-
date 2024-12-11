@@ -3,7 +3,6 @@
 //
 
 #include <iostream>
-#include <cmath>
 
 // 定义常微分方程的右侧 f(t, y)，例如 y'(t) = -2y(t)
 double f(double t, double y) {

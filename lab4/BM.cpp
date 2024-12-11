@@ -1,8 +1,12 @@
+//
+// Created by liekon on 2024/11/27.
+//
+
 #include <iostream>
 #include <cmath>
-#include <functional>
 
-// 定义方程 f(x) = 0，这里使用 f(x) = x^2 - 4 作为示例
+
+// 定义方程 f(x) = 0
 double f(double x) {
     return x * x - 4;  // 例如 x^2 - 4 = 0
 }

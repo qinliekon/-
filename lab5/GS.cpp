@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include <iomanip>  // 用于控制输出精度
 
 // Gauss-Seidel 方法求解n阶线性方程组 A * x = b
 std::vector<double> gaussSeidelMethod(const std::vector<std::vector<double>>& A, const std::vector<double>& b, std::vector<double>& x, double tolerance, int maxIter) {
@@ -74,7 +73,7 @@ int main() {
     // 输出结果，设置输出精度
     std::cout << "The solution is:" << std::endl;
     for (size_t i = 0; i < solution.size(); ++i) {
-        std::cout << "x[" << i + 1 << "] = " << std::fixed << std::setprecision(6) << solution[i] << std::endl;
+        std::cout << "x[" << i + 1 << "] = " << solution[i] << std::endl;
     }
 
     return 0;

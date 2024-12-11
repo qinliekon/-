@@ -6,12 +6,12 @@
 #include <cmath>
 #include <functional>
 
-// 定义方程 f(x) = 0，这里使用 f(x) = x^2 - 4 作为示例
+// 定义方程 f(x) = 0
 double f(double x) {
     return x * x - 4;  // 例如 x^2 - 4 = 0
 }
 
-// 定义方程 f(x) 的导数 f'(x)，对于 f(x) = x^2 - 4, 导数是 f'(x) = 2x
+// 定义方程 f(x) 的导数 f'(x)
 double df(double x) {
     return 2 * x;  // 导数 f'(x) = 2x
 }
@@ -54,7 +54,7 @@ double newtonMethod(double (*f)(double), double (*df)(double), double x0, double
 
 int main() {
     // 初始猜测
-    double x0 = 100.0;  // 初始猜测 x0 = 3
+    double x0 = 3.0;  // 初始猜测 x0 = 3
     double tolerance = 1e-6;  // 精度要求
     int maxIter = 100;  // 最大迭代次数
 
